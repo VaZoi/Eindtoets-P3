@@ -1,0 +1,25 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu_item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu_item a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+.menu_item a:hover {
+    background-color: #f0f0f0;
+    color: black;
+}

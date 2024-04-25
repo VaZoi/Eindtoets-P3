@@ -53,6 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Phone</title>
     <script src="../navbar.js" defer></script>
+    <link rel="stylesheet" href="../style/header.css">
 </head>
 <body>
 <nav id="nav" class="nav"></nav>
@@ -61,19 +62,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     <form method="POST">
         <label for="name">Name:</label>
-        <input type="text" name="name" value="<?php echo $userInfo['name']; ?>" required><br>
+        <input type="text" name="name" value="<?php echo $phoneInfo['name']; ?>" required><br>
 
         <label for="brand">Brand:</label>
-        <input type="text" name="brand" value="<?php echo $userInfo['brand']; ?>" required><br>
+        <input type="text" name="brand" value="<?php echo $phoneInfo['brand']; ?>" required><br>
 
         <label for="model">Model:</label>
-        <input type="text" name="model" value="<?php echo $userInfo['model']; ?>" required><br>
+        <input type="text" name="model" value="<?php echo $phoneInfo['model']; ?>" required><br>
 
         <label for="storage">Storage:</label>
-        <input type="text" name="storage" value="<?php echo $userInfo['storage']; ?>" required><br>
+        <input type="text" name="storage" value="<?php echo $phoneInfo['storage']; ?>" required><br>
 
         <label for="price">Price:</label>
-        <input type="number" name="price" value="<?php echo $userInfo['price']; ?>" required><br>
+        <input type="number" name="price" value="<?php echo $phoneInfo['price']; ?>" required><br>
 
         <input type="submit" value="Update">
     </form>

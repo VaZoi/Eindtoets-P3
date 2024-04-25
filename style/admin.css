@@ -1,0 +1,47 @@
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+.showphones {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.showphones h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.showphones table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.showphones th, .showphones td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.showphones th {
+    background-color: #f2f2f2;
+}
+
+.showphones tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.showphones tr:hover {
+    background-color: #ddd;
+}
+
+.showphones td a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.showphones td a:hover {
+    color: #0056b3;
+}

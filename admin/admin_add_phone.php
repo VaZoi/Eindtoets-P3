@@ -16,16 +16,18 @@ if (!$userAuth->isLoggedIn()) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Phone</title>
     <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/adminAddPhone.css">
     <script src="../navbar.js" defer></script>
 </head>
 <body>
 <nav id="nav" class="nav"></nav>
-<?php
-    if (isset($_GET['success']) && $_GET['success'] == 1) {
-        echo "<p>Phone successfully added!</p>";
-    }
-    ?>
-<div class="addphone">
+    <div class="addphone">
+        <div class="form-container">
+            <?php
+                if (isset($_GET['success']) && $_GET['success'] == 1) {
+                    echo "<p class='success-message'>Phone successfully added!</p>";
+                }
+            ?>
             <h2>Add Phone</h2>
             <form method="post" action="process_add_phone.php">
 
@@ -49,5 +51,6 @@ if (!$userAuth->isLoggedIn()) {
                 <input type="submit" value="Add Phone">
             </form>
         </div>
+    </div>
 </body>
 </html>

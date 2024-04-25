@@ -54,31 +54,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Edit Phone</title>
     <script src="../navbar.js" defer></script>
     <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/adminEditPhone.css">
 </head>
 <body>
 <nav id="nav" class="nav"></nav>
     <main>
-    <h2>Edit Phone</h2>
-    
-    <form method="POST">
-        <label for="name">Name:</label>
-        <input type="text" name="name" value="<?php echo $phoneInfo['name']; ?>" required><br>
+        <div class="form-container">
+            <h2>Edit Phone</h2>
+            
+            <form method="POST">
+                <label for="name">Name:</label>
+                <input type="text" name="name" value="<?php echo $phoneInfo['name']; ?>" required><br>
 
-        <label for="brand">Brand:</label>
-        <input type="text" name="brand" value="<?php echo $phoneInfo['brand']; ?>" required><br>
+                <label for="brand">Brand:</label>
+                <input type="text" name="brand" value="<?php echo $phoneInfo['brand']; ?>" required><br>
 
-        <label for="model">Model:</label>
-        <input type="text" name="model" value="<?php echo $phoneInfo['model']; ?>" required><br>
+                <label for="model">Model:</label>
+                <input type="text" name="model" value="<?php echo $phoneInfo['model']; ?>" required><br>
 
-        <label for="storage">Storage:</label>
-        <input type="text" name="storage" value="<?php echo $phoneInfo['storage']; ?>" required><br>
+                <label for="storage">Storage:</label>
+                <input type="text" name="storage" value="<?php echo $phoneInfo['storage']; ?>" required><br>
 
-        <label for="price">Price:</label>
-        <input type="number" name="price" value="<?php echo $phoneInfo['price']; ?>" required><br>
+                <label for="price">Price:</label>
+                <input type="number" name="price" value="<?php echo $phoneInfo['price']; ?>" required><br>
 
-        <input type="submit" value="Update">
-    </form>
-
+                <input type="submit" value="Update">
+            </form>
+        </div>
     </main>
     
 </body>

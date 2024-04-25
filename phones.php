@@ -24,7 +24,7 @@ class Phones
         return $this->dbh->run("UPDATE $this->phonestable SET name = ?, brand = ?, model = ?, storage = ?, price = ? WHERE phone_id = ?", [$name, $brand, $model, $storage, $price, $phone_id]);
     }
 
-    public function deletePhones($phone_id) : int
+    public function deletePhones($phone_id) : PDOStatement
     {
         return $this->dbh->run("DELETE FROM $this->phonestable where phone_id = $phone_id");
     }
